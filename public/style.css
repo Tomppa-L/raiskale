@@ -1,0 +1,16 @@
+:root{color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#1a1210;color:#e7d9cf;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px;gap:10px}
+canvas{width:min(100%,calc((100vh - 90px) * 16 / 9));aspect-ratio:16/9;border-radius:10px;box-shadow:0 8px 40px rgba(0,0,0,.6);cursor:pointer;touch-action:none;background:#3a2a22;display:block}
+.hint{margin:0;text-align:center;color:#a99a8f;font-size:.9rem}
+kbd{background:#2a1f1a;border:1px solid #4a3a30;border-bottom-width:2px;border-radius:4px;padding:0 6px}
+[hidden]{display:none!important}
+.nameform{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center}
+.nameform label{color:#f8bbd0}
+.nameform input{background:#241915;border:1px solid #5a463a;border-radius:8px;color:#fff;padding:8px 10px;font:inherit;width:160px}
+.nameform input:focus{outline:2px solid #f48fb1}
+.nameform button{background:#f48fb1;color:#1a1210;border:0;border-radius:8px;padding:8px 14px;font:inherit;font-weight:700;cursor:pointer}
+.nameform button[type=button]{background:#3a2c25;color:#e7d9cf}
+.rotate{display:none;margin:0;text-align:center;color:#f8bbd0;font-size:.95rem}
+@media (orientation:portrait) and (max-width:700px){.rotate{display:block}}

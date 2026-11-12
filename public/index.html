@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Kokki-Tomin räiskyvät räiskäleet</title>
+<meta name="description" content="Kokki-Tomin räiskyvät räiskäleet: paista räiskäleet kypsiksi, käännä ne paistinpannulla ja pinoa vaaleanpunaiselle lautaselle. Selainpeli, toimii tietokoneella ja puhelimella.">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main>
+  <canvas id="game" width="960" height="540" aria-label="Kokki-Tomin räiskyvät räiskäleet -peli"></canvas>
+  <form id="nameform" class="nameform" hidden>
+    <label>Nimesi tulostaululle <input id="namein" maxlength="12" autocomplete="off" placeholder="Nimi" required></label>
+    <button type="submit">Tallenna</button>
+    <button type="button" id="nameskip">Ohita</button>
+  </form>
+  <p class="rotate">Puhelimella peli on isompi vaakatilassa: käännä puhelin sivuttain.</p>
+  <p class="hint"><kbd>Väli</kbd> käännä, <kbd>Enter</kbd> heitä pinoon, <kbd>T</kbd> tulostaulu, <kbd>M</kbd> äänet, <kbd>P</kbd> tauko. Hiirellä ja kosketuksella painikkeista.</p>
+</main>
+<script src="./game.js"></script>
+</body>
+</html>
